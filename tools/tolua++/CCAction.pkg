@@ -279,6 +279,13 @@ class CCToggleVisibility : public CCActionInstant
     static CCToggleVisibility* create();
 };
 
+class CCRemoveSelf : public CCActionInstant
+{
+	CCFiniteTimeAction* reverse(void);
+
+    static CCRemoveSelf* create(bool isNeedCleanUp);
+};
+
 class CCFlipX : public CCActionInstant
 {
 	CCFiniteTimeAction* reverse(void);
