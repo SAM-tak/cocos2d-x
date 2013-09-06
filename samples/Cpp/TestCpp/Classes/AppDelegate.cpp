@@ -4,7 +4,6 @@
 #include "controller.h"
 #include "SimpleAudioEngine.h"
 #include "cocos-ext.h"
-#include "CCArmature/utils/CCArmatureDataManager.h"
 
 USING_NS_CC;
 using namespace CocosDenshion;
@@ -16,7 +15,7 @@ AppDelegate::AppDelegate()
 AppDelegate::~AppDelegate()
 {
 //    SimpleAudioEngine::end();
-	cocos2d::extension::CCArmatureDataManager::purgeArmatureSystem();
+	cocos2d::extension::CCArmatureDataManager::purge();
 }
 
 bool AppDelegate::applicationDidFinishLaunching()
